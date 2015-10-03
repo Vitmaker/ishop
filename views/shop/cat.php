@@ -53,7 +53,7 @@
                 </div>
             <?php endif;?>
         <?php endforeach;?>
-        <?php pagination($page, $pages_count);?>
+        <?php if($pages_count > 1) pagination($page, $pages_count);?>
     <?php else:?>
         <p>Здесь товаров нет!</p>
     <?php endif;?>
